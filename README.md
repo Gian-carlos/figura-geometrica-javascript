@@ -1,1 +1,1 @@
-# figura-geometrica-javascript
+# Figura-Geometrica-Javascript
