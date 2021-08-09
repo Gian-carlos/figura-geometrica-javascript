@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+</head>
+<body>
+    <header>
+        <a class ="icon-header-container"><img src="./img/icons8-diversidad-48.png" alt="figuras_geometricas"></a>
+        <h1>Calculadora Geometrica</h1>
+    </header>
+<!--tarjeta de cuadrado-->
+    <section class="figure-card">
+        <div class="header-card">
+            <h2>Calcula el area y perimetro de un cuadrado</h2>
+            <hr>
+            <figure class="Figure-icon-container">
+                <img class="figure-icon" src="./img/icons8-cubo-30.png" alt="Cubo">
+            </figure>
+        </div>
+        <form Class="figure-card-container">
+            <label for="InputCuadrado">
+                <p>Escribe cuanto mide cada lado de tu cuadrado</p>     
+            </label>
+            <input type="number" name="" id="InputCuadrado">
+            <button type="button" onclick="CalcularAreaCuadrado()">Calcular area</button>
+            <button type="button" onclick="CalcularPerimetroCuadrado()">Calcular perimetro</button>
+            <p>Resultado: <output id="ResultadoCuadrado"></output></p>   
+        </form>
+    </section>
+<!--tarjeta de triangulo-->
+    <section class="figure-card">
+        <div class="header-card">
+            <h2>Calcula el area y perimetro de un triangulo</h2>
+            <hr>
+            <figure class="Figure-icon-container">
+                <img class="figure-icon" src="./img/icons8-tres-triángulos-30.png" alt="Triangulo">
+            </figure>
+        </div>
+        <form Class="figure-card-container">
+            <label for="InputBaseTriangulo">
+                <p>Escribe cuanto mide la base del triangulo</p>     
+            </label>
+            <input type="number" name="lado1" id="InputBaseTriangulo">
+            <label for="ladotriangulo1">
+                   Escribe cuanto mide el primer lado del triangulo 
+            </label>
+            <input type="number" name="" id="ladotriangulo1">
+            <label for="ladotriangulo2">
+                   Escribe cuanto mide el segundo lado del triangulo 
+            </label>
+            <input type="number" name="" id="ladotriangulo2">
+            <label for="alturatriangulo">
+                   Escribe cuanto mide la altura del triangulo           
+            </label>    
+            <input type="number" name="" id="alturaTriangulo">
+            <button type="button" onclick="CalcularAreaTriangulo()">Calcular area</button>
+            <button type="button" onclick="CalcularPerimetroTriangulo()">Calcular perimetro</button>
+            <button type="button" onclick="alturaTrianguloIsosceles()">Calcular triangulo isosceles</button>
+            <p>Resultado: <output id="ResultadoTriangulo"></output></p>   
+        </form>
+    </section>
+    <!--tarjeta de circulo-->
+    <section class="figure-card">
+        <div class="header-card">
+            <h2>Calcula el area y perimetro de un circulo</h2>
+            <hr>
+            <figure class="Figure-icon-container">
+                <img class="figure-icon" src="./img/icons8-0-por-ciento-50.png" alt="Circulo">
+            </figure>
+        </div>
+        <form Class="figure-card-container">
+            <label for="InputCirculo">
+                <p>Escribe cuanto mide el radio del circulo</p>     
+            </label>
+            <input type="number" name="" id="InputCirculo">
+            <button type="button" onclick="CalcularAreaCirculo()" >Calcular area </button>
+            <button type="button" onclick="CalcularPerimetroCirculo()" >Calcular perimetro </button>
+            <p>Resultado: <output id="ResultadoCirculo" ></output></p>   
+        </form>
+    </section>
+    <!--tarjeta de triangulo isosceles-->
+   
+    <script src="./figuras.js"></script>
+</body>
+</html>
